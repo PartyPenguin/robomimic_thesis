@@ -136,7 +136,7 @@ class FLOW_GAT(PolicyAlgo):
 
     def train_on_batch(self, batch, epoch, validate=False):
         """
-        Performs a single training or validation step on a processed batch using Corrected Conditional Flow Matching (CFM).
+        Performs a single training or validation step on a processed batch using Conditional Flow Matching (CFM).
         """
         with TorchUtils.maybe_no_grad(no_grad=validate):
             actions = batch["actions"]
