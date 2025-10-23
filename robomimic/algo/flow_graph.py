@@ -38,7 +38,7 @@ class FLOW_GAT(PolicyAlgo):
             algo_config, obs_config, global_config, obs_key_shapes, ac_dim, device
         )
         self.converter = JsonTemporalGraphConverter(
-            json_path=global_config.train.graph_config2, device=self.device
+            json_path=global_config.train.graph_config, device=self.device
         )
 
 
